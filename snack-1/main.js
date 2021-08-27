@@ -16,7 +16,13 @@
 var numeri = [];
 var i = 0;
 while ( i < 5 ){
-    numeri.push(parseInt(prompt('inserisci un numero')))
+    var userInput = parseInt(prompt('inserisci un numero'));
+    numeri.push(userInput);
+
+    if (isNaN(userInput)){
+        alert('hai inserito un valore che non è un numero!! RICARICA LA PAGINA')
+        break
+    }
 
     i++
 };
