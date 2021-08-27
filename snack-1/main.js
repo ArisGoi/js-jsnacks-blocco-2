@@ -1,38 +1,30 @@
-// var numeri = [];
-
-// for ( i = 0; i < 5; i++){
-//     numeri.push(parseInt(prompt('inserisci un numero')))
-// };
-
+// 1) metodo con for
 // var somma = 0;
 
 // for ( i = 0; i < 5; i++){
-//     somma += numeri[i] 
-// };
-// console.log(numeri);
-// console.log(somma);
+//     var numero = parseInt(prompt('inserisci un numero'));
+
+//     while (isNaN(numero)){
+//         numero = parseInt(prompt('Non hai inserito un numero, inserisci un numero!'));
+//     }
+//     somma += numero;
+// }
+
+// console.log(somma)
 
 
-var numeri = [];
-var i = 0;
-while ( i < 5 ){
-    var userInput = parseInt(prompt('inserisci un numero'));
-    numeri.push(userInput);
-
-    if (isNaN(userInput)){
-        alert('hai inserito un valore che non è un numero!! RICARICA LA PAGINA')
-        break
-    }
-
-    i++
-};
-
+// 2) metodo con while
 var somma = 0;
 
 var i = 0;
-while ( i < 5){
-    somma += numeri[i] 
+while (i < 5){
+    var numero = parseInt(prompt('inserisci un numero'));
+
+    while (isNaN(numero)){
+        numero = parseInt(prompt('Non hai inserito un numero, inserisci un numero!'));
+    }
+    somma += numero;
+
     i++
-};
-console.log(numeri);
+}
 console.log(somma);
