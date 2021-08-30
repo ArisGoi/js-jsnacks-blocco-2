@@ -5,7 +5,7 @@ var somma = 0;
 
 for (i = 0; i < numeri.length; i++){
 
-    if (numeri[i] % 2 !== 0){
+    if ( i % 2 !== 0){
         somma += numeri[i]
     };
 

@@ -7,5 +7,11 @@ while (array01.length > array02.length){
     i++
 }
 
+var i = 7;
+while (array01.length < array02.length){
+    array01.push("el-" + i);
+    i++
+}
+
 console.log(array01);
 console.log(array02);
